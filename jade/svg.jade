@@ -1,0 +1,7 @@
+mixin svg
+  svg(xmlns='http://www.w3.org/2000/svg' style='display: none')&attributes(attributes)
+    block
+
+mixin use(href)
+  svg&attributes(attributes)
+    | <use xlink:href='#{href}'/>

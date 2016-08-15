@@ -1,0 +1,23 @@
+mixin html
+  doctype
+  html(lang='en-us')&attributes(attributes)
+    block
+
+mixin head(object)
+  head&attributes(attributes)
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width' initial-scale='1')
+    -if (object && object.hasOwnProperty('color'))
+      meta(name='theme-color' content=object.color)
+    -if (object && object.hasOwnProperty('description'))
+      meta(name='description' content=object.description)
+    block
+
+mixin script(url)
+  script(src=url)&attributes(attributes)
+
+mixin style(url)
+  link(href=url rel='stylesheet' type='text/css')&attributes(attributes)
+
+mixin image(url)
+  img(src=url)&attributes(attributes)
