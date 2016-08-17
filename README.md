@@ -1,4 +1,4 @@
-# Mixns
+# Mixins
 
 ## +html
 ```jade
