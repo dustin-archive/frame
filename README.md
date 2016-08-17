@@ -46,6 +46,19 @@
 <link href="path/to/styles.css" rel="stylesheet" type="text/css">
 ```
 
+## +template
+
+```jade
++template('template-id')
+  div This is a template!
+```
+
+```html
+<script id='template-id' type='x/template'>
+  <div>This is a template!</div>
+</script>
+```
+
 ## +image
 
 ```jade
