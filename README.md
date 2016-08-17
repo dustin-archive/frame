@@ -72,17 +72,28 @@
 ## +svg
 
 ```jade
-+svg()
++svg.
+  <symbol id='close' viewBox='0 0 16 16'>
+    <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
+  </symbol>
 ```
 
 ```html
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id='close' viewBox='0 0 16 16'>
+    <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
+  </symbol>
+</svg>
 ```
 
 ## +use
 
 ```jade
-+use()
++use('symbol-id')
 ```
 
 ```html
+<svg>
+  <use xlink:href='symbol-id'/>
+</svg>
 ```
