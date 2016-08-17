@@ -19,5 +19,9 @@ mixin script(url)
 mixin style(url)
   link(href=url rel='stylesheet' type='text/css')&attributes(attributes)
 
+mixin template(name)
+  script(id=name type='x/template')&attributes(attributes)
+    block
+
 mixin image(url)
   img(src=url)&attributes(attributes)
