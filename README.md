@@ -46,19 +46,6 @@
 <link href="path/to/styles.css" rel="stylesheet" type="text/css">
 ```
 
-## +template
-
-```jade
-+template('template-id')
-  div This is a template!
-```
-
-```html
-<script id='template-id' type='x/template'>
-  <div>This is a template!</div>
-</script>
-```
-
 ## +image
 
 ```jade
@@ -68,6 +55,8 @@
 ```html
 <img src="path/to/image.png">
 ```
+
+# SVG
 
 ## +svg
 
@@ -96,4 +85,35 @@
 <svg>
   <use xlink:href='symbol-id'/>
 </svg>
+```
+
+# Vue.js
+
+## +vue
+
+```jade
++vue({
+  id: 'root',
+  script: 'dist/build.js'
+})
+```
+
+```html
+<body>
+  <div id='root'></div>
+  <script src='dist/build.js'></script>
+</body>
+```
+
+## +template
+
+```jade
++template('template-id')
+  div This is a template!
+```
+
+```html
+<script id='template-id' type='x/template'>
+  <div>This is a template!</div>
+</script>
 ```

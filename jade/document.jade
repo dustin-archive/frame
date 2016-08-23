@@ -3,14 +3,14 @@ mixin html
   html(lang='en-us')&attributes(attributes)
     block
 
-mixin head(object)
+mixin head(obj)
   head&attributes(attributes)
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width' initial-scale='1')
-    -if (object && object.hasOwnProperty('color'))
-      meta(name='theme-color' content=object.color)
-    -if (object && object.hasOwnProperty('description'))
-      meta(name='description' content=object.description)
+    -if (obj && obj.hasOwnProperty('color'))
+      meta(name='theme-color' content=obj.color)
+    -if (obj && obj.hasOwnProperty('description'))
+      meta(name='description' content=obj.description)
     block
 
 mixin script(url)
@@ -22,6 +22,20 @@ mixin style(url)
 mixin template(name)
   script(id=name type='x/template')&attributes(attributes)
     block
+
+mixin vue(obj)
+  body&attributes(attributes)
+    -if (obj.id)
+      div(id=obj.id)
+        block
+    -else
+      #root
+        block
+
+    -if (obj.script)
+      script(src=obj.script)
+    -else
+      script(src='dist/build.js')
 
 mixin image(url)
   img(src=url)&attributes(attributes)
