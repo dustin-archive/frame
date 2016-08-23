@@ -5,12 +5,14 @@ mixin html
 
 mixin head(obj)
   head&attributes(attributes)
-    meta(charset='UTF-8')
+    meta(charset='utf-8')
     meta(name='viewport' content='width=device-width' initial-scale='1')
     -if (obj && obj.hasOwnProperty('color'))
       meta(name='theme-color' content=obj.color)
     -if (obj && obj.hasOwnProperty('description'))
       meta(name='description' content=obj.description)
+    -if(obj && obj.hasOwnProperty('title'))
+      title obj.title
     block
 
 mixin script(url)

@@ -14,7 +14,7 @@
 
 ## +head
 ```jade
-+head({ color: '#000', description: 'Lorem ipsum or something.' })
++head({ color: '#000', title: 'A title or something.', description: 'A description or something.' })
 ```
 
 ```html
@@ -22,7 +22,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" initial-scale="1">
   <meta name="theme-color" content="#000">
-  <meta name="description" content="Lorem ipsum or something.">
+  <meta name="description" content="A description or something.">
+  <title>A title or something.</title>
 </head>
 ```
 
