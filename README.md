@@ -92,15 +92,15 @@
 ## +vue
 
 ```jade
-+vue({
-  id: 'root',
-  script: 'dist/build.js'
-})
++vue({ id: 'root', script: 'dist/build.js' })
+  .foobar
 ```
 
 ```html
 <body>
-  <div id='root'></div>
+  <div id='root'>
+    <div class='foobar'></div>
+  </div>
   <script src='dist/build.js'></script>
 </body>
 ```
