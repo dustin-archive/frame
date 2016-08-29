@@ -12,7 +12,7 @@ mixin head(obj)
     -if (obj && obj.hasOwnProperty('description'))
       meta(name='description' content=obj.description)
     -if(obj && obj.hasOwnProperty('title'))
-      title obj.title
+      title= obj.title
     block
 
 mixin script(url)
