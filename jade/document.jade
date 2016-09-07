@@ -21,23 +21,8 @@ mixin script(url)
 mixin style(url)
   link(href=url rel='stylesheet' type='text/css')&attributes(attributes)
 
-mixin template(name)
-  script(id=name type='x/template')&attributes(attributes)
-    block
-
-mixin vue(obj)
-  body&attributes(attributes)
-    -if (obj.id)
-      div(id=obj.id)
-        block
-    -else
-      #root
-        block
-
-    -if (obj.script)
-      script(src=obj.script)
-    -else
-      script(src='dist/build.js')
-
 mixin image(url)
   img(src=url)&attributes(attributes)
+
+mixin input
+  input(size='1')&attributes(attributes)
