@@ -8,10 +8,9 @@ mixin vue(obj)
       div(id=obj.id)
         block
     -else
-      #root
+      #app
         block
-
     -if (obj.script)
       script(src=obj.script)
     -else
-      script(src='dist/build.js')
+      script(src='main.js')
