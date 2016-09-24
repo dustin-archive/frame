@@ -57,6 +57,29 @@
 <img src="path/to/image.png">
 ```
 
+## +input
+
+```jade
++input(type='text')
+```
+
+```html
+<input size='1' type='text'>
+```
+
+## +video
+
+```jade
++video
+  source(src='path/to/video.mp4' type='video/mp4')
+```
+
+```html
+<video width='auto' height='auto'>
+  <source src='path/to/video.mp4' type='video/mp4'>
+</video>
+```
+
 # SVG
 
 ## +svg
@@ -93,7 +116,7 @@
 ## +vue
 
 ```jade
-+vue({ id: 'root', script: 'dist/build.js' })
++vue({ id: 'app', script: 'main.js' })
   .foobar
 ```
 
