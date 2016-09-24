@@ -122,10 +122,10 @@
 
 ```html
 <body>
-  <div id='root'>
+  <div id='app'>
     <div class='foobar'></div>
   </div>
-  <script src='dist/build.js'></script>
+  <script src='main.js'></script>
 </body>
 ```
 
