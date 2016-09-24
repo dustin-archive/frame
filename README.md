@@ -7,7 +7,7 @@
 
 ```html
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang='en-us'>
 
 </html>
 ```
@@ -19,10 +19,10 @@
 
 ```html
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width" initial-scale="1">
-  <meta name="theme-color" content="#000">
-  <meta name="description" content="A description or something.">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width' initial-scale='1'>
+  <meta name='theme-color' content='#000'>
+  <meta name='description' content='A description or something.'>
   <title>A title or something.</title>
 </head>
 ```
@@ -34,7 +34,7 @@
 ```
 
 ```html
-<script src="path/to/script.js"></script>
+<script src='path/to/script.js'></script>
 ```
 
 ## +style
@@ -44,7 +44,7 @@
 ```
 
 ```html
-<link href="path/to/styles.css" rel="stylesheet" type="text/css">
+<link href='path/to/styles.css' rel='stylesheet' type='text/css'>
 ```
 
 ## +image
@@ -54,7 +54,7 @@
 ```
 
 ```html
-<img src="path/to/image.png">
+<img src='path/to/image.png'>
 ```
 
 ## +input
@@ -92,7 +92,7 @@
 ```
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+<svg xmlns='http://www.w3.org/2000/svg' style='display: none'>
   <symbol id='close' viewBox='0 0 16 16'>
     <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
   </symbol>
