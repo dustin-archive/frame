@@ -1,11 +1,7 @@
 {
-  "name": "frame",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "pilot-frame",
+  "version": "2.0.1",
+  "description": "Sweet Pug mixins",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pilot-boilerplate/frame.git"
@@ -16,9 +12,12 @@
     "url": "https://github.com/pilot-boilerplate/frame/issues"
   },
   "homepage": "https://github.com/pilot-boilerplate/frame#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-jade": "^1.1.0"
-  },
-  "dependencies": {}
+  "keywords": [
+    "pilot",
+    "boilerplate",
+    "frame",
+    "html",
+    "jade",
+    "pug"
+  ]
 }
