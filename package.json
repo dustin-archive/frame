@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/pilot-boilerplate/frame.git"
   },
-  "author": "Dustin Dowell",
+  "author": "Dustin Dowell <dustindowell22@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pilot-boilerplate/frame/issues"
