@@ -4,13 +4,13 @@ mixin template(name)
 
 mixin vue(obj)
   body&attributes(attributes)
-    -if (obj.id)
-      div(id=obj.id)
+    -if (obj && !!obj.el)
+      div(id=obj.el class=obj.el)
         block
     -else
-      #app
+      #app.app
         block
-    -if (obj.script)
+    -if (obj && !!obj.script)
       script(src=obj.script)
     -else
       script(src='main.js')

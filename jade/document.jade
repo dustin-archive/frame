@@ -6,12 +6,15 @@ mixin html
 mixin head(obj)
   head&attributes(attributes)
     meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width' initial-scale='1')
-    -if (obj && obj.hasOwnProperty('color'))
+    -if (obj && !!obj.zoom)
+      meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=0')
+    -else
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+    -if (obj && !!obj.color)
       meta(name='theme-color' content=obj.color)
-    -if (obj && obj.hasOwnProperty('description'))
+    -if (obj && !!obj.description)
       meta(name='description' content=obj.description)
-    -if(obj && obj.hasOwnProperty('title'))
+    -if(obj && !!obj.title)
       title= obj.title
     block
 
@@ -19,14 +22,13 @@ mixin script(url)
   script(src=url)&attributes(attributes)
 
 mixin style(url)
-  link(href=url rel='stylesheet' type='text/css')&attributes(attributes)
+  link(href=url rel='stylesheet')&attributes(attributes)
 
 mixin image(url)
   img(src=url)&attributes(attributes)
 
-mixin input
-  input(size='1')&attributes(attributes)
+mixin input-text
+  input(type='text' size='1')&attributes(attributes)
 
-//- wysiwyg editors forcing width and height attributes
 mixin video
   video(width='auto' height='auto')

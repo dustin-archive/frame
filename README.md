@@ -14,13 +14,18 @@
 
 ## +head
 ```jade
-+head({ color: '#000', title: 'A title or something.', description: 'A description or something.' })
++head({
+  color: '#000',
+  title: 'A title or something.',
+  description: 'A description or something.'
+  zoom: true
+})
 ```
 
 ```html
 <head>
   <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width' initial-scale='1'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0'>
   <meta name='theme-color' content='#000'>
   <meta name='description' content='A description or something.'>
   <title>A title or something.</title>
@@ -116,13 +121,13 @@
 ## +vue
 
 ```jade
-+vue({ id: 'app', script: 'main.js' })
++vue({ el: 'app', script: 'main.js' })
   .foobar
 ```
 
 ```html
 <body>
-  <div id='app'>
+  <div id='app' class='app'>
     <div class='foobar'></div>
   </div>
   <script src='main.js'></script>
