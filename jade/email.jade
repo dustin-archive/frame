@@ -1,0 +1,11 @@
+// source: https://backgrounds.cm/
+mixin bulletproof-background(obj)
+  div(style='background-color: ' + obj.color)
+    |<!--[if gte mso 9]>
+    v:background(xmlns:v='urn:schemas-microsoft-com:vml' fill='t')
+      v:fill(type='tile' src=obj.image color=obj.color)
+    |<![endif]-->
+    table(width='100%' height='100%' cellpadding='0' cellspacing='0' border='0')
+      tr
+        td(valign='top' align='left' background=obj.image)
+          block
