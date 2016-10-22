@@ -1,6 +1,6 @@
 {
   "name": "pilot-frame",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Sweet Pug mixins",
   "main": "jade/main.jade",
   "repository": {
