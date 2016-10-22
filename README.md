@@ -1,4 +1,4 @@
-# Mixins
+# Document
 
 ## +html
 ```jade
@@ -49,7 +49,7 @@
 ```
 
 ```html
-<link href='path/to/styles.css' rel='stylesheet' type='text/css'>
+<link href='path/to/styles.css' rel='stylesheet'>
 ```
 
 ## +image
@@ -62,27 +62,15 @@
 <img src='path/to/image.png'>
 ```
 
-## +input
+# Form
+## +input-text
 
 ```jade
-+input(type='text')
++input-text(placeholder='hello')
 ```
 
 ```html
-<input size='1' type='text'>
-```
-
-## +video
-
-```jade
-+video
-  source(src='path/to/video.mp4' type='video/mp4')
-```
-
-```html
-<video width='auto' height='auto'>
-  <source src='path/to/video.mp4' type='video/mp4'>
-</video>
+<input type='text' size='1' placeholder='hello'>
 ```
 
 # SVG
@@ -145,4 +133,19 @@
 <script id='template-id' type='x/template'>
   <div>This is a template!</div>
 </script>
+```
+
+# WYSIWYG
+
+## +video
+
+```jade
++video
+  source(src='path/to/video.mp4' type='video/mp4')
+```
+
+```html
+<video width='auto' height='auto'>
+  <source src='path/to/video.mp4' type='video/mp4'>
+</video>
 ```
