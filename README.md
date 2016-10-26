@@ -76,20 +76,26 @@
 # SVG
 
 ## +svg
++ To ensure svg contents are not visible, place the mixin in the head.
 
 ```jade
-+svg.
-  <symbol id='close' viewBox='0 0 16 16'>
-    <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
-  </symbol>
+head
+  +svg.
+    <symbol id='close' viewBox='0 0 16 16'>
+      <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
+    </symbol>
+    //- you may find it easier to include your symbols from an external file
+    //- include symbols/close.xml
 ```
 
 ```html
-<svg xmlns='http://www.w3.org/2000/svg' style='display: none'>
-  <symbol id='close' viewBox='0 0 16 16'>
-    <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
-  </symbol>
-</svg>
+<head>
+  <svg xmlns='http://www.w3.org/2000/svg'>
+    <symbol id='close' viewBox='0 0 16 16'>
+      <path stroke='#f00' stroke-width='2' d='M4 4l8 8m0-8l-8 8' stroke-linecap='round'/>
+    </symbol>
+  </svg>
+</head>
 ```
 
 ## +use
