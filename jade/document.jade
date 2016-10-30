@@ -7,9 +7,9 @@ mixin head(obj)
   head&attributes(attributes)
     meta(charset='utf-8')
     -if (obj && !!obj.zoom)
-      meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=0')
-    -else
       meta(name='viewport' content='width=device-width, initial-scale=1')
+    -else
+      meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=0')
     -if (obj && !!obj.color)
       meta(name='theme-color' content=obj.color)
     -if (obj && !!obj.description)
