@@ -15,19 +15,23 @@
 ## +head
 ```jade
 +head({
+  zoom: true,
   color: '#000',
-  title: 'A title or something.',
-  description: 'A description or something.'
-  zoom: true
+  description: 'Description or something.',
+  keywords: 'keywords, or, something',
+  favicon: 'assets/favicon.png',
+  title: 'Title or something.'
 })
 ```
 
 ```html
 <head>
   <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
   <meta name='theme-color' content='#000'>
-  <meta name='description' content='A description or something.'>
+  <meta name='description' content='Description or something.'>
+  <meta name='keywords' content='keywords, or, something'>
+  <link rel='icon' href='assets/favicon.png'>
   <title>A title or something.</title>
 </head>
 ```
@@ -49,7 +53,7 @@
 ```
 
 ```html
-<link href='path/to/styles.css' rel='stylesheet'>
+<link rel='stylesheet' href='path/to/styles.css'>
 ```
 
 ## +image
