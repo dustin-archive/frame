@@ -26,7 +26,7 @@ mixin script(url)
   script(src=url)&attributes(attributes)
 
 mixin style(url)
-  link(href=url rel='stylesheet')&attributes(attributes)
+  link(rel='stylesheet' href=url)&attributes(attributes)
 
 mixin image(url)
   img(src=url)&attributes(attributes)
