@@ -14,6 +14,10 @@ mixin head(obj)
       meta(name='theme-color' content=obj.color)
     -if (obj && !!obj.description)
       meta(name='description' content=obj.description)
+    -if (obj && !!obj.keywords)
+      meta(name='keywords' content=obj.keywords)
+    -if (obj && !!obj.favicon)
+      link(rel='icon' href=obj.favicon)
     -if(obj && !!obj.title)
       title= obj.title
     block
