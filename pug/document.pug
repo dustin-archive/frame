@@ -30,3 +30,7 @@ mixin style(url)
 
 mixin image(url)
   img(src=url)&attributes(attributes)
+
+mixin template(name)
+  script(id=name type='x/template')&attributes(attributes)
+    block
